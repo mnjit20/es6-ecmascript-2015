@@ -6,4 +6,13 @@ let person = {
   lastName
 };
 
+let mascot = 'Moose';
+
+let team = {
+  person,
+  mascot
+};
+
 console.log(person);
+
+console.log(team);
