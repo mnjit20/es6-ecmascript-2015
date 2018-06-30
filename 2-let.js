@@ -1,19 +1,13 @@
-var aa = 'manjeet';
+var fs = [];
 
-
-function print() {
-  var aa = 'aa';
+for (let i = 0; i < 10; i++) {
+  var I = i;
+  console.log('i : ', i, fs.length);
+  fs.push(function () {
+    console.log('let i : ', i, ' ---  var I : ', I);
+  })
 }
 
-
-print();
-
-console.log(aa);
-
-{
-  var aa = 'scope value';
-}
-
-console.log(aa);
-print();
-console.log(aa);
+fs.forEach(function (aa) {
+  aa();
+});
